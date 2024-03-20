@@ -36,16 +36,16 @@ const convertMarkdownToHTML = (filePath, htmlFilePath) => {
             return '    ' + line;
         });
         const htmlContent = `<!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Test</title>
-    </head>
-    <body>
-    ${mdLines.join('\n')}
-    </body>
-    </html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+${mdLines.join('\n')}
+</body>
+</html>
         `
         writeFile(htmlFilePath, htmlContent, function(err) {
             if (err) throw err;
