@@ -18,13 +18,13 @@ Testeando **cosas** en _Markdown_.
 
 ### Énfasis
 
-This is some text with **bold formatting** and **also bold formatting**.
+This is some text with **bold formatting**.
 
-This is some text with _italic formatting_ and _also italic formatting_.
+This is some text with _italic formatting_.
 
-This is some text with **_bold and italic formatting_** and **_also bold and italic formatting_**.
+This is some text with **_bold and italic formatting_**
 
-This is some text with **_combined bold and italic formatting_** and **_also combined bold and italic formatting_**.
+This is some text with **_combined bold and italic formatting with reverse syntax_**.
 
 ### Enlaces
 
