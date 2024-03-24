@@ -84,7 +84,7 @@ const codeBlockPattern = {
 };
 
 const paragraphPattern = {
-  regex: /^(?!#|\*|\+|-|\d+\.|```)(.+)/gm,
+  regex: /^(?!#|\*|\+|-|\d+\.|```|!)(.+)/gm,
   html: '<p>$1</p>',
 };
 
