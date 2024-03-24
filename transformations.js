@@ -41,6 +41,7 @@ const transformCodeBlock = createTransformer(codeBlockPattern);
 const transformParagraph = createTransformer(paragraphPattern);
 
 const transformations = [
+  transformParagraph,
   transformHeadings,
   transformEmphasis,
   transformLists,
@@ -48,7 +49,6 @@ const transformations = [
   transformLinks,
   transformCodeBlock,
   transformCode,
-  transformParagraph,
 ];
 
 module.exports = { transformations };
