@@ -8,6 +8,7 @@ const pipe = functions => data => {
 const tranformBoldAndItalic = str => str.replace(/\*\*\*(.*)\*\*\*/g, '<em><strong>$1</strong></em>');
 const transformBold = str => str.replace(/\*\*(.*)\*\*/g, '<strong>$1</strong>');
 const transformItalic = str => str.replace(/\*(.*)\*/g, '<em>$1</em>');
+const transformCode = str => str.replace(/`(.*)`/g, '<code>$1</code>');
 
 const transformp = str => {
     if (str === '') {
@@ -84,6 +85,7 @@ const convertMarkdownToHTML = (filePath, htmlFilePath) => {
                 tranformBoldAndItalic, transformBold, transformItalic,
                 transformp,
                 transformh6, transformh5, transformh4, transformh3, transformh2, transformh1,
+                transformCode,
                 transformOrderedLists, transformUnorderedLists,
             ])(line);
         })
