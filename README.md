@@ -1,4 +1,4 @@
-# JS Funcional: E1 2024-2
+# JS Funcional: E1 2024-1
 
 ## Integrantes
 - Benjamin Gonzalez
